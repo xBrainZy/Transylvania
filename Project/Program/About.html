@@ -1,0 +1,277 @@
+<html>
+<head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+body { 
+    font-family: 'Montserrat', sans-serif;
+    background-color: f4f5f7;
+    margin:0px;
+}
+
+h1 {
+    font-size:70px;
+    text-align:center;
+    padding-top:70px;
+    letter-spacing:0.3cm;
+}
+
+
+
+.a1 {
+    background-color: white;
+
+}
+
+img:not(.logo) {
+    height:250px;
+    width:380px;
+    float: left;
+    margin-right:2cm;
+    margin-top: 1cm;
+     box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+img:hover:not(.logo) {
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 1), 0 6px 25px 0 rgba(0, 0, 0, 0.1);
+    
+}
+
+h2 {
+    font-size:50px;
+    letter-spacing:0.1cm;
+}
+
+
+
+
+
+p {
+    font-size:20px;
+    text-align:left;
+}
+
+fieldset {
+    margin-top:2cm;
+    width:90%;
+    background-color: white;
+     box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    border:0px;
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    right:0;
+    background-color:efefef;
+    overflow-x: hidden;
+    transition: 1s;
+    padding-top: 60px;
+    margin-top:54px;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 1s;
+    font-family:calibri;
+}
+
+.sidenav a:hover, .offcanvas a:focus {
+    color: efefef;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.bg:hover {
+    background-color: black;
+    transition: 0.8s;
+    padding-left: 1.2cm;
+}
+
+.lord {
+    font-size:36px;
+    color:white;
+    text-align:center;
+    font-family:Georgina;
+    font-size:45px;
+    margin-left:14cm;
+    letter-spacing:0.1cm;
+   
+}
+.lord2 {
+    color:white;
+    font-size:36px;
+    cursor:pointer; 
+    height:49px;
+}
+
+
+
+.imgcontainer {
+    text-align: center;
+    margin-top:1.5cm; 
+}
+
+img.logo {
+    width: 32%;
+    border-radius: 38%;
+}
+
+.bar {
+    background-color:black;
+	box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+	width:100%;
+	top:0;
+	z-index:40;
+	margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+}
+
+.lord:hover {
+    color:aqua;
+	cursor:pointer;
+}
+
+hr { width: 80%;}
+
+</style>
+</head>
+<body>
+
+
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &#10007; </a>
+  <div class=bg><a href="index.html">INDEX</a></div>
+  <div class=bg><a href="A homepage.html">HOME</a></div>
+  <div class=bg><a href="menu.html">MENU</a></div>
+  <div class=bg><a href="serv.html">SERVICES</a></div>
+  <div class=bg><a href="about.html">MANAGEMENT</a></div>
+  <div class=bg><a href="Reservation.html">RESERVATION</a></div>
+  <div class=bg><a href="rooms.html">ROOMS $ SUITES</a></div>
+  <div class=bg><a href="loc.html">DISCOVER US</a></div>
+  
+  </div>
+
+<div class=bar><span class=lord2 onclick="openNav()"> &#9776; </span><span class=lord>TRANSYLVANIA</span> </div>
+
+<script> 
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+<div class="imgcontainer">
+    <img src="../Images/login.png" alt="logo" class="logo">
+  
+  </div>
+
+<center>
+<fieldset class=a1> 
+
+
+<img src = "../Images/12.jpg"><h2>Head Chef</h2>
+<P>NAME : SAN SUNG YANG </p>
+<P>MOTO : "If no one can do it , I must do it" </p>
+<p>Skilled and has acquired a cooking Degree in Oxford<br>Highly reputed chef and maintains high degree of hygiene.</p><br><br><br><br>
+<hr>
+
+
+<img src = "../Images/11.jpg"><h2>Manager</h2>
+<P>NAME : SALYI SURVIA </p>
+<P>MOTO : "I will rest when I die" </p>
+<p>Masters in Management , has experience of 5 years and perfect in leadership quality<br>Highly dedicated, maintains high degree of professionalism.</p><br><br><br><br>
+<hr>
+
+
+<img src = "../Images/13.jpg"><h2>Finance Manager</h2>
+<P>NAME : RAYN RINER </p>
+<P>MOTO : "I play with money , I will not be played by money" </p>
+<p>A highly qualified Charted Accountant with 10 years of experience<br>maintains unmatched accounting skills , and shows positive attitude towards work.</p><br><br><br><br>
+<hr>
+
+
+<img src= "../Images/14.jpg"><h2>Head of Bartenders</h2>
+<P>NAME : ELBERT ALDIVAO </p>
+<P>MOTO : "I taste with my eyes , nose , ears and touch . tounge is biased" </p>
+<p> A expert Soumelier , with high sense of taste . guaranteed suggestions to customers  <br>remembers each customers tastes and suggests new drinks , also knowledgable in drinks all over the world.</p><br><br><br><br>
+<hr>
+
+
+
+<img src = "../Images/15.jpg"><h2>Head of Vendors</h2>
+<P>NAME : COUNT STEVE OAKWOOD </p>
+<P>MOTO : "Cars' job is to transport , no matter what type it is"  </p>
+<p> A car designer , with knowledge of almost all cars . Knows how to take care of any car , guaranteed safety of your car  <br>with passion outdone by none , his safety measures can keep your mind at ease. </p><br><br><br><br>
+<hr>
+
+
+
+<img src= "../Images/16.jpg"><h2>Lead Singer</h2>
+<P>NAME : Iris Dyner </p>
+<P>MOTO : "Voice is a powerful weapon , use it right and you can make others smile" </p>
+<p> A professional voice actress as well as a singer , with record selling performances , she's in a class of her own.  <br>
+Graduated from Harleys Acting School , her talent and skill is outshined by none. </p><br><br><br><br>
+<hr>
+
+
+
+<img src= "../Images/17.png"><h2>Head Waiter</h2>
+<P>NAME : Keanu Reaves </p>
+<P>MOTO : "Life is a game for the fool , a dream for the wise ." </p>
+<p> Skilled at leading people and is highly creative , has a master degree for marketing under his belt.  <br>
+He graduated from Oxford University , experienced and is a master in handling with the customers.  </p><br><br><br><br>
+<hr>
+
+
+
+<img src = "../Images/18.jpg"><h2>Chief of Security</h2>
+<P>NAME : JOHN WICK </p>
+<P>MOTO : "Fear reduces your strength by 80%  but it is not evil , it shows your weaknesses ." </p>
+<p> Skilled at martial arts , art of swords and a briliant grande designer.  <br>
+Graduated from Mount Shing School , former Muay Thai boxer </p><br><br><br><br>
+<hr>
+
+</fieldset>
+
+<p><br></p>
+
+
+</body></html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

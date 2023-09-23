@@ -1,0 +1,340 @@
+﻿<html>
+<head>
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+body { 
+    font-family: 'Montserrat', sans-serif;
+    background-color:f4f5f7;
+    margin:0px;
+}
+
+.lord:hover {
+    color:aqua;
+	cursor:pointer;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    right:0;
+    background-color:efefef;
+    overflow-x: hidden;
+    transition: 1s;
+    padding-top: 60px;
+    margin-top:54px;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+   
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 1s;
+    font-family:calibri;
+}
+
+.sidenav a:hover, .offcanvas a:focus {
+    color: efefef;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.bg:hover {
+    background-color: black;
+    transition: 0.8s;
+    padding-left: 1.2cm;
+}
+
+.lord {
+    font-size:36px;
+    color:white;
+    text-align:center;
+    font-family:Georgina;
+    font-size:45px;
+    margin-left:14cm;
+    font-weight:bold;
+    letter-spacing:0.1cm;
+   
+}
+.lord2 {
+    color:white;
+    font-size:36px;
+    cursor:pointer; 
+    height:49px;
+}
+
+
+.bar {
+    background-color:black;
+	box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+	width:100%;
+	top:0;
+	z-index:40;
+	margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+}
+.imgcontainer {
+    text-align: center;
+    margin-top:1.5cm; 
+}
+
+img.logo {
+    width: 32%;
+    border-radius: 38%;
+}
+table {
+    margin-top:2cm;
+	border: noborder;
+	
+}
+
+tr {
+   font-family:calibri;
+}
+ 
+
+
+* {box-sizing:border-box}
+
+
+.mySlides{display:none;}
+
+.slideshow-container {
+  max-width:90%;
+  position: relative;
+  height:80%;
+  margin-top:1cm;
+}
+
+
+.text {
+  color: efefef;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  background-color:black;
+  font-family:calibri;
+  
+}
+
+.text:hover {
+    letter-spacing:3;
+	transition: 0.6s;
+}
+
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: black;
+  border-radius: 30%;
+  display: inline-block;
+  transition: background-color 0.6s;
+}
+
+.active {
+  background-color: white;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 4s;
+  animation-name: fade;
+  animation-duration: 4s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .2}
+  to {opacity: 1}
+}
+
+.a { width:100%;
+		height:100%; }
+
+.b { width: 80px;
+	 height: 80px;}
+
+#a { text-align:center; }
+#b { width: 100%;}
+#c { float: left; 
+	width: 48%; 
+	height: 60%; 
+	margin-top: 1.5cm;
+		}
+	
+#h1n1 { font-size:35px; }
+
+#d { float: left;
+	width: 2px; 
+	height: 76%; 
+	background-color: silver; 
+	margin-top: 2cm;}
+	
+#e { float: left;
+	width: 48%; 
+	height: 60%; 
+	margin-top:1.5cm; 
+	}
+	
+#map { width:600px;
+	   height:450px;
+	   margin-bottom: 100px;
+	   }
+
+
+</style>
+</head>
+<body>
+
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &#10007; </a>
+  <div class=bg><a href="index.html">INDEX</a></div>
+  <div class=bg><a href="A homepage.html">HOME</a></div>
+  <div class=bg><a href="menu.html">MENU</a></div>
+  <div class=bg><a href="serv.html">SERVICES</a></div>
+  <div class=bg><a href="about.html">MANAGEMENT</a></div>
+  <div class=bg><a href="Reservation.html">RESERVATION</a></div>
+  <div class=bg><a href="rooms.html">ROOMS $ SUITES</a></div>
+  <div class=bg><a href="loc.html">DISCOVER US</a></div>
+
+  </div>
+
+<div class=bar><span class=lord2 onclick="openNav()"> &#9776; </span><span class=lord>TRANSYLVANIA</span> </div>
+
+<script> 
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+<div class="imgcontainer">
+    <img src="../Images/login.png" alt="logo" class="logo">
+  
+  </div>
+
+
+
+<center>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="../Images/main.png" class = "a">
+  <div class="text">Hotel TRANSYLVANIA isn't like a Home, But it's Better than Being a Home Guest</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="../Images/wr.jpg" class = "a">
+  <div class="text">A Place Where Best Divulgence and Conveyance Begins</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="../Images/indswi.jpg" class = "a">
+  <div class="text">Life is Cool, With the Pool-Just Collect Moments</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="../Images/party.jpg" class = "a">
+  <div class="text">Make the Event Preminent in this Hall</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="../Images/ent.jpg" class = "a">
+  <div class="text">A Unique Blend of Modern Aminities and Spacious Accomodations Creates the Luxury</div>
+</div>
+
+</div>
+<br>
+
+<div id = "a">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+</div>
+
+
+<div id = "b">
+<div id = "c">
+ <h1 id = "h1n1">Contact Us</h1>
+ <table>
+ <tr>
+ <td><a href=https://www.facebook.com/ > <img src = "../Images/fb.png" class = "b"></a></td><td>Facebook</td>
+ </tr>
+ <tr>
+ <td><a href=https://www.youtube.com/watch?v=fWNaR-rxAic > <img src = "../Images/tel.png" class = "b"></a></td><td>+947 534323421</td>
+ </tr>
+ <tr>
+ <td><a href=https://twitter.com/ > <img src = "../Images/twit.png" class = "b"></a></td><td>Twitter</td>
+ </tr>
+  <tr>
+ <td><a href=https://www.instagram.com/?hl=en.com/ > <img src = "../Images/insta.png" class = "b"></a></td><td>Instagram</td>
+ </tr>
+ </table>
+</div>
+ 
+<div id = "d">
+</div>
+
+<div id = "e">
+ <h1 id = "h1n1">Location</h1>
+ <br><br>
+ <div id = "map"><iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d92325.71209875571!2d-79.66356795828248!3d43.686052256557346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x882b399abd649e39%3A0xe6e436d124df1978!2sToronto%20Airport%20Marriott%20Hotel%2C%20Dixon%20Road%2C%20Toronto%2C%20ON%2C%20Canada!3m2!1d43.6859495!2d-79.5935275!5e0!3m2!1sen!2sus!4v1586018934891!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+ </div>
+ 
+ 
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active","");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 6000);
+}
+</script>
+
+
+
+</body>
+
+
+</html>

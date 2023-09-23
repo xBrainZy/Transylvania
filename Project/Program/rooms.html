@@ -1,0 +1,302 @@
+<html>
+<style>
+<head>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+* {
+    margin:0;
+}
+body { 
+    font-family: 'Montserrat', sans-serif;
+    background-color:f4f5f7;
+    margin:0px;
+}
+
+.lord:hover {
+    color:aqua;
+	cursor:pointer;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    right:0;
+    background-color:efefef;
+    overflow-x: hidden;
+    transition: 1s;
+    padding-top: 60px;
+    margin-top:54px;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+   
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 1s;
+    font-family:calibri;
+}
+
+.sidenav a:hover, .offcanvas a:focus {
+    color: efefef;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.bg:hover {
+    background-color: black;
+    transition: 0.8s;
+    padding-left: 1.2cm;
+}
+
+.lord {
+    font-size:36px;
+    color:white;
+    text-align:center;
+    font-family:Georgina;
+    font-size:45px;
+    margin-left:14cm;
+    font-weight:bold;
+    letter-spacing:0.1cm;
+   
+}
+.lord2 {
+    color:white;
+    font-size:36px;
+    cursor:pointer; 
+    height:49px;
+}
+
+
+
+.bar {
+    background-color:black;
+	box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+	width:100%;
+	top:0;
+	z-index:40;
+	margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+}
+
+
+.imgcontainer {
+   text-align: center;
+    margin-top:2cm;
+}
+
+img.logo {
+    width: 32%;
+    border-radius: 38%;
+
+}
+
+fieldset {
+    margin-top:1cm;
+	margin-left:60px;
+	margin-bottom: 80px ;
+    width:90%;
+    background-color:white;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    border:0px;
+	padding:10px;
+}
+
+.container {
+  float:left;
+  position:relative;
+  width: 45%;
+  margin:10px;
+  
+}
+.container1 {
+  float:right;
+  position:relative;
+  width: 45%;
+  margin:10px;
+  
+}
+
+.image {
+  width: 100%;
+  height: 40%;
+}
+
+.overlay {
+  position: absolute;
+  top: 25%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  width: 100%;
+  opacity: 0;
+  transition: 1s ease;
+  background-color: f4f5f7;
+}
+
+.container1:hover .overlay {
+  opacity: 1;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: black;
+  font-size: 20px;
+  font-family:"the goldsmith vintage", calibri;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  padding-top:1cm;
+}
+
+h6 {
+  font-size:15px;
+  text-align:center;}
+
+h5 {
+  font-size:15px;
+  text-align:center;}
+  
+
+
+</style>
+</head>
+<body>
+
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &#10007; </a>
+  <div class=bg><a href="index.html">INDEX</a></div>
+  <div class=bg><a href="A homepage.html">HOME</a></div>
+  <div class=bg><a href="menu.html">MENU</a></div>
+  <div class=bg><a href="serv.html">SERVICES</a></div>
+  <div class=bg><a href="about.html">MANAGEMENT</a></div>
+  <div class=bg><a href="Reservation.html">RESERVATION</a></div>
+  <div class=bg><a href="rooms.html">ROOMS & SUITES</a></div>
+  <div class=bg><a href="loc.html">DISCOVER US</a></div>
+ 
+  </div>
+
+<div class=bar><span class=lord2 onclick="openNav()"> &#9776; </span><span class=lord>TRANSYLVANIA</span> </div>
+<script> 
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+<div class="imgcontainer">
+    <img src="../Images/login.png" alt="logo" class="logo">
+</div>
+<fieldset>
+
+<div class="container">
+  <img src="../Images/deluxe.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Deluxe Rooms:38-40m<sup>2</sup>
+	<h5>Sleeps 4</h5>
+	<h6>$100/per night</h6>
+	</div>
+  </div>
+</div>
+<div class="container1">
+  <img src="../Images/seaview.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Seaview Rooms:38-40m<sup>2</sup>
+	<h5>Sleeps 4</h5>
+	<h6>$110/per night</h6>
+	</div>
+  </div>
+</div>
+<div class="container">
+  <img src="../Images/club.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Club Rooms:40-42m<sup>2</sup>
+	<h5>Sleeps 6</h5>
+	<h6>$80/per night</h6>
+	</div>
+  </div>
+</div>
+<div class="container1">
+  <img src="../Images/Executive Suites.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Executive Suites:75-80m<sup>2</sup>
+	<h5>Sleeps 4</h5>
+	<h6>$100/per night</h6>
+	
+	</div>
+  </div>
+</div>
+<div class="container">
+  <img src="../Images/Diplomatic Suite.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Diplomatic Suite:60-65m<sup>2</sup>
+	<h5>Sleeps 4</h5>
+	<h6>$150/per night</h6>
+	
+	</div>
+  </div>
+</div>
+<div class="container1">
+  <img src="../Images/Royal-Suite.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Royal Suites:80-85m<sup>2</sup>
+	<h5>Sleeps 8</h5>
+	<h6>$120/per night</h6>
+	
+	</div>
+  </div>
+</div>
+<div class="container">
+  <img src="../Images/penthouse.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Penthouse Suite:30-32m<sup>2</sup>
+	<h5>Sleeps 2</h5>
+	<h6>$100/per night</h6>
+	
+	</div>
+  </div>
+</div>
+<div class="container1">
+  <img src="../Images/junior.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Junior Suites:64-65m<sup>2</sup>
+	<h5>Sleeps 4</h5>
+	<h6>$140/per night</h6>
+	
+	</div>
+  </div>
+</div>
+
+</fieldset>
+
+
+
+
+
+</body>
+
+
+</html>

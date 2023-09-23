@@ -1,0 +1,325 @@
+<html>
+<head>
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+body { 
+    font-family: 'Montserrat', sans-serif;
+    background-color: f4f5f7;
+    margin:0px;
+}
+
+h1:not(.somu) {
+    font-size:50px;
+    padding-top:0.5cm;
+    font-size:50px;
+    letter-spacing:0.1cm;
+}
+
+
+h1:hover:not(.somu) {
+    letter-spacing:0.3cm;
+    transition: 1s;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    right:0;
+    background-color:efefef;
+    overflow-x: hidden;
+    transition: 1s;
+    padding-top: 60px;
+    margin-top:54px;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 1s;
+    font-family:calibri;
+}
+
+.sidenav a:hover, .offcanvas a:focus {
+    color: efefef;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.bg:hover {
+    background-color: black;
+    transition: 0.8s;
+    padding-left: 1.2cm;
+}
+
+.lord {
+    font-size:36px;
+    color:white;
+    text-align:center;
+    font-family:Georgina;
+    font-size:45px;
+    margin-left:14cm;
+    font-weight:bold;
+    letter-spacing:0.1cm;
+   
+}
+.lord2 {
+    color:white;
+    font-size:36px;
+    cursor:pointer; 
+    height:49px;
+}
+
+.bar {
+    background-color:black;
+	box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+	width:100%;
+	top:0;
+	z-index:40;
+	margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+}
+
+
+
+.imgcontainer {
+    text-align: center;
+    margin-top:2cm; 
+}
+
+img.logo {
+    width: 32%;
+    border-radius: 38%;
+
+}
+
+.gallery {
+    margin: 40px;
+
+    width: 350px;
+	align:center;
+}
+
+
+.desc {
+    padding: 30px;
+    text-align: center;
+    font-size:20px;
+}
+
+img:not(.logo) {
+    width:370px;
+    height:270px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    align:center;
+}
+
+img:hover:not(.logo) {
+    width:370px;
+    height:270px;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.main {
+    padding-top:0.5cm;
+}
+
+fieldset {
+    margin-top:2cm;
+    width:90%;
+    background-color:white;
+     box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    border:0px;
+}
+
+.field1 {
+	float:left;
+	width:40%;
+	margin-left:55px;
+	margin-top:20px;
+        max-width: 650px;
+        border:0px;
+}
+.field2 {
+	float:right;
+	width:44%;
+	margin-right:55px;
+	margin-top:20px;
+	margin-bottom: 20px;
+        max-width: 650px;
+        border:0px;
+}
+
+h6 {
+    font-size:22px;
+    text-align:left;
+    font-size:22px;
+}
+
+
+h6:hover {
+    letter-spacing:0.1cm;
+    transition: 1s;
+}
+
+.big {
+    margin-top:1cm;
+    font-size:65px;
+}
+
+.somu {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.20), 0 6px 20px 0 rgba(0, 0, 0, 0.20);
+    width:100%;
+    margin-top:1cm;
+    background-color:black;
+}
+
+
+
+.lord:hover {
+    color:aqua;
+	cursor:pointer;
+}
+embed {
+    width:370px;
+    height:270px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    align:center;
+}
+
+hr { width: 80% ; 
+}
+
+</style>
+</head>
+<body>
+
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &#10007; </a>
+  <div class=bg><a href="index.html">INDEX</a></div>
+  <div class=bg><a href="A homepage.html">HOME</a></div>
+  <div class=bg><a href="menu.html">MENU</a></div>
+  <div class=bg><a href="serv.html">SERVICES</a></div>
+  <div class=bg><a href="about.html">MANAGEMENT</a></div>
+  <div class=bg><a href="Reservation.html">RESERVATION</a></div>
+  <div class=bg><a href="rooms.html">ROOMS & SUITES</a></div>
+  <div class=bg><a href="loc.html">DISCOVER US</a></div>
+  
+  </div>
+
+<div class=bar><span class=lord2 onclick="openNav()"> &#9776; </span><span class=lord>TRANSYLVANIA</span> </div>
+<script> 
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+<div class="imgcontainer">
+    <img src="../Images/login.png" alt="logo" class="logo">
+  </div>
+
+<center>
+
+<fieldset class=main>
+
+<h1>Fitness Center</h1>
+<hr>
+<div class="gallery">
+  <a target="_blank" href="../Images/fitness1.jpg">
+  
+    <img src="../Images/fitness1.jpg" >
+  </a>
+</div>
+<div class="desc"></div>
+
+</fieldset>
+
+<fieldset class=main>
+
+<h1>Swimming</h1>
+<hr>
+<div class="gallery">
+  <a target="_blank" href="../Images/swi.jpg">
+    <img src="../Images/swi.jpg">
+  </a>
+</div>
+<div class="desc"></div>
+
+</fieldset>
+
+<fieldset class=main>
+
+<h1>Lobby Bar</h1>
+<hr>
+<div class="gallery">
+  <a target="_blank" href="../Images/wr.jpg">
+    <img src="../Images/wr.jpg">
+  </a>
+</div>
+<div class="desc"></div>
+
+</fieldset>
+<p class=big>&#9813;</p>
+
+<div class=somu><h1 style=color:white;>Other Services & Facilities</h1></div>
+
+<fieldset class=field1>
+    <h1>Free hotel services</h1>
+    <hr>
+    <h6>1.Reception desk open 24 hours a day
+    <h6>2.Respective Parkings
+    <h6>3.Free PC + internet in the lobby
+    <h6>4.Free Wi-Fi
+    <h6>5.Coeliac catering
+    <h6>6.Library
+    <h6>7.DVD rental
+    <h6>8.Fire alarm
+    <h6>9.Wheelchair access
+    <h6>10.Ironing available
+    <h6>11.Telephone alarm
+    <h6>12.Board games
+    <h6>13.Baby cot free of charge
+        
+    </fieldset>
+<fieldset class=field2>
+    <h1 >Room Facilities</h1>
+    <hr>
+    <h6>1.Bathroom with shower and hairdryer
+    <h6>2.Direct dial phone
+    <h6>3.Healthy mattress (magniflex)
+    <h6>4.Safe deposit box
+    <h6>5.Air-conditioning
+    <h6>6.Sat television with DVD
+    <h6>7.Wifi and cable internet free of charge
+    <h6>8.Fire and smoke detectors
+    <h6>9.Tea and coffee making facilities
+    <h6>10.Living-rooms (apartments)
+    <h6>11.Dressing gown
+    <h6>12.Hygiene accessories
+    <h6>13.Slippers (on request)
+        
+    </fieldset>
+
+
+</body>
+</html>

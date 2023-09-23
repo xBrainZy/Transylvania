@@ -1,0 +1,223 @@
+<html>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+body {
+   margin:0;
+   background-color: white;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    right:0;
+    background-color:efefef;
+    overflow-x: hidden;
+    transition: 1s;
+    padding-top: 60px;
+    margin-top:54px;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 1s;
+    font-family:calibri;
+}
+
+.sidenav a:hover, .offcanvas a:focus {
+    color: efefef;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.bg:hover {
+    background-color: black;
+    transition: 0.8s;
+    padding-left: 1.2cm;
+}
+
+.lord {
+    font-size:36px;
+    color:white;
+    text-align:center;
+    font-family:Georgina;
+    font-size:45px;
+    margin-left:14cm;
+    font-weight:bold;
+    letter-spacing:0.1cm;
+   
+}
+.lord2 {
+    color:white;
+    font-size:36px;
+    cursor:pointer; 
+    height:49px;
+}
+
+
+
+form { 
+    margin-top:0.5cm;
+}
+
+input[type=date], input[type=email], input[type=time] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.cancelbtn {
+    width: 20%;
+    padding: 10px 18px;
+    background-color:#f44336;
+	float:left;
+}
+
+.updatebtn {
+    width: 20%;
+    padding: 10px 18px;
+    background-color:#2FC7B7;
+	float:right;
+}
+
+
+.container {
+    padding: 16px;
+}
+
+fieldset {
+    margin-top:1cm;
+    background-color: efefef;
+    width:80%;
+    text-align:left;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+	border:0px;
+}
+
+h1 {
+    text-align:center;
+    letter-spacing:0.5cm;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin-top:2cm;
+    
+}
+
+img.logo {
+    width: 32%;
+    border-radius: 38%;
+}
+
+.bar {
+    background-color:black;
+	box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+	width:100%;
+	top:0;
+	z-index:40;
+	margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+}
+
+.lord:hover {
+    color:aqua;
+	cursor:pointer;
+}
+
+a {
+	text-decoration:none;
+	color:white;
+	
+}
+hr { width: 40%; }
+</style>
+<body>
+
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &#10007; </a>
+  <div class=bg><a href="index.html">INDEX</a></div>
+  <div class=bg><a href="A homepage.html">HOME</a></div>
+  <div class=bg><a href="menu.html">MENU</a></div>
+  <div class=bg><a href="serv.html">SERVICES</a></div>
+  <div class=bg><a href="about.html">MANAGEMENT</a></div>
+  <div class=bg><a href="Reservation.html">RESERVATION</a></div>
+  <div class=bg><a href="rooms.html">ROOMS $ SUITES</a></div>
+  <div class=bg><a href="loc.html">DISCOVER US</a></div>
+  
+  </div>
+
+<div class=bar><span class=lord2 onclick="openNav()"> &#9776; </span><span class=lord>TRANSYLVANIA</span> </div>
+<script> 
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+<center>
+  <div class="imgcontainer">
+    <img src="../Images/login.png" alt="logo" class="logo">
+  </div>
+
+
+  <fieldset>
+<form>
+
+  <div class="container">
+    <h1> Table Reservation <hr> </h1>
+
+    <label><b>Email for Contact</b></label>
+    <input type="email" placeholder="Enter email" name="email" required>
+     
+    <label><b>Date of Reservation</b></label>
+    <input type="date" placeholder="Enter Date" name="date" required>
+	 
+    <label><b>Time of Visit</b></label>
+    <input type="time" placeholder="Enter time" name="time" required>
+    <button type="submit" name="reserve" >RESERVE</button>
+    
+
+</form>
+<button class=cancelbtn>CANCEL</button>
+<button class=updatebtn>UPDATE</button>
+</fieldset>
+
+
+
+
+
+</body>
+</html>

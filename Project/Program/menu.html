@@ -1,0 +1,433 @@
+<html>
+<head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+body { 
+    font-family: 'Montserrat', sans-serif;
+    background-color: f4f5f7;
+    margin:0px;
+}
+
+h1:not(.somu) {
+    font-size:50px;
+    padding-top:0.5cm;
+    letter-spacing:0.1cm;
+}
+
+
+h1:hover:not(.somu) {
+    letter-spacing:0.3cm;
+    transition: 1s;
+}
+
+.gallery {
+    margin: 20px;
+    float: left;
+    width: 350px;
+}
+
+
+.lord:hover {
+    color:aqua;
+	cursor:pointer;
+}
+
+.desc {
+    padding: 15px;
+    text-align: center;
+    font-size:25px;
+}
+
+
+h2 {
+    font-size:50px;
+    letter-spacing:0.1cm;
+}
+
+img:not(.logo) {
+    width:250px;
+    height:170px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    align:center;
+}
+
+img:hover:not(.logo) {
+    width:250px;
+    height:170px;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    align:center;
+    transform: scale(1.4,1.4)
+}
+
+.main {
+    padding-top:0.5cm;
+}
+
+fieldset {
+    margin-top:1cm;
+    width:90%;
+    background-color:white;
+     box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    border:0px;
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    right:0;
+    background-color:efefef;
+    overflow-x: hidden;
+    transition: 1s;
+    padding-top: 60px;
+    margin-top:54px;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 1s;
+    font-family:calibri;
+}
+
+.sidenav a:hover, .offcanvas a:focus {
+    color: efefef;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.bg:hover {
+    background-color: black;
+    transition: 0.8s;
+    padding-left: 1.2cm;
+}
+
+.lord {
+    font-size:36px;
+    color:white;
+    text-align:center;
+    font-family:Georgina;
+    font-size:45px;
+    margin-left:14cm;
+    font-weight:bold;
+    letter-spacing:0.1cm;
+   
+}
+.lord2 {
+    color:white;
+    font-size:36px;
+    cursor:pointer; 
+    height:49px;
+}
+
+
+
+.bar {
+    background-color:black;
+	box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+	width:100%;
+	top:0;
+	z-index:40;
+	margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin-top:2cm; 
+}
+
+img.logo {
+    width: 32%;
+    border-radius: 38%;
+   
+}
+
+h1 {
+    padding-top:1.0cm;
+    font-size:90px;
+    
+}
+
+.big {
+    margin-top:1cm;
+    font-size:65px;
+}
+
+.somu {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.20), 0 6px 20px 0 rgba(0, 0, 0, 0.20);
+    width:100%;
+    margin-top:1cm;
+    background-color:black;
+	
+}
+
+
+
+
+</style>
+</head>
+<body>
+
+
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &#10007; </a>
+  <div class=bg><a href="index.html">INDEX</a></div>
+  <div class=bg><a href="A homepage.html">HOME</a></div>
+  <div class=bg><a href="menu.html">MENU</a></div>
+  <div class=bg><a href="serv.html">SERVICES</a></div>
+  <div class=bg><a href="about.html">MANAGEMENT</a></div>
+  <div class=bg><a href="Reservation.html">RESERVATION</a></div>
+  <div class=bg><a href="rooms.html">ROOMS & SUITES</a></div>
+  <div class=bg><a href="loc.html">DISCOVER US</a></div>
+  
+  </div>
+
+<div class=bar><span class=lord2 onclick="openNav()"> &#9776; </span><span class=lord>TRANSYLVANIA</span> </div>
+<script> 
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+<div class="imgcontainer">
+    <img src="../Images/login.png" alt="logo" class="logo">
+ 
+  </div>
+
+<center>
+
+<fieldset class=main>
+
+<h1>Italian Dishes</h1>
+<hr width=60%>
+<div class="gallery">
+  <a target="_blank" href="../Images/carpaccio.jpg">
+    <img src="../Images/carpaccio.jpg">
+  </a>
+  <div class="desc">Tuna Carpaccio <br> $10 </div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="../Images/mahi mahi.jpg">
+    <img src="../Images/mahi mahi.jpg">
+  </a>
+  <div class="desc">Mahi Mahi Ceviche <br> $15 </div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="../Images/pizza-bianca.jpg">
+    <img src="../Images/pizza-bianca.jpg">
+  </a>
+  <div class="desc">Pizza Bianca <br> $20 </div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="../Images/angus.jpg">
+    <img src="../Images/angus.jpg" >
+  </a>
+  <div class="desc">Angus Beef Tampiqueña <br> $18 </div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="../Images/lasagne.jpg">
+    <img src="../Images/lasagne.jpg">
+  </a>
+  <div class="desc">Lasagne <br> $22 </div>
+</div>
+</fieldset>
+
+
+<fieldset class=main>
+<h1>Indian Dishes</h1>
+<hr width=60%>
+<div class="gallery">
+  <a target="_blank" href="../Images/alu.jpg">
+    <img src="../Images/alu.jpg">
+  </a>
+  <div class="desc">Alu Gobi <br> $12 </div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="../Images/biryani.jpg">
+    <img src="../Images/biryani.jpg">
+  </a>
+  <div class="desc">Chicken Biryani <br> $20 </div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="../Images/butter.jpg">
+    <img src="../Images/butter.jpg">
+  </a>
+  <div class="desc">Chicken Curry <br> $16 </div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="../Images/65.jpg">
+    <img src="../Images/65.jpg">
+  </a>
+  <div class="desc">Chicken 65 <br> $22 </div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="../Images/tikka.jpg">
+    <img src="../Images/tikka.jpg">
+  </a>
+  <div class="desc">Chicken Tikka <br> $20 </div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="../Images/mixveg.jpg">
+    <img src="../Images/mixveg.jpg">
+  </a>
+  <div class="desc">Shubgi Mix <br> $15 </div>
+</div>
+</fieldset>
+
+<fieldset class=main>
+<h1>Chinese Dishes</h1>
+<hr width=60%>
+<div class="gallery">
+  <a target="_blank" href="../Images/dim sum.jpg">
+    <img src="../Images/dim sum.jpg">
+  </a>
+  <div class="desc">dim sum<br> $12 </div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="../Images/hot and sour.jpg">
+    <img src="../Images/hot and sour.jpg">
+  </a>
+  <div class="desc">hot and sour soup<br> $20 </div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="../Images/chilli.jpg">
+    <img src="../Images/chilli.jpg">
+  </a>
+  <div class="desc">szechwan chilli <br> $16 </div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="../Images/mapo.jpg">
+    <img src="../Images/mapo.jpg">
+  </a>
+  <div class="desc">mapo tofu <br> $22 </div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="../Images/date.jpg">
+    <img src="../Images/date.jpg">
+  </a>
+  <div class="desc">date pancakes <br> $20 </div>
+</div>
+</fieldset>
+
+
+<fieldset class=main>
+
+<h1>Mexican Dishes</h1>
+<hr width=60%>
+<div class="gallery">
+  <a target="_blank" href="../Images/taco.jpg">
+    <img src="../Images/taco.jpg">
+  </a>
+  <div class="desc">Taco<br> $15 </div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="../Images/salsa.jpg">
+    <img src="../Images/salsa.jpg">
+  </a>
+  <div class="desc">Salsa <br> $10 </div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="../Images/guacamole.jpg">
+    <img src="../Images/guacamole.jpg">
+  </a>
+  <div class="desc">Guacamole <br> $5 </div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="../Images/enchilada.jpg">
+    <img src="../Images/enchilada.jpg" >
+  </a>
+  <div class="desc">Enchilada <br> $18 </div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="../Images/fajita.jpg">
+    <img src="../Images/fajita.jpg">
+  </a>
+  <div class="desc">Fajita <br> $15 </div>
+</div>
+</fieldset>
+
+<fieldset class=main>
+<h1>Arabian Dishes</h1>
+<hr width=60%>
+<div class="gallery">
+  <a target="_blank" href="../Images/shawarma.jpg">
+    <img src="../Images/shawarma.jpg">
+  </a>
+  <div class="desc">Shawarma Mix<br> $10 </div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="../Images/mandi.jpg">
+    <img src="../Images/mandi.jpg">
+  </a>
+  <div class="desc">Mandi<br> $20 </div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="../Images/harees.jpg">
+    <img src="../Images/harees.jpg">
+  </a>
+  <div class="desc">Harees <br> $5 </div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="../Images/shish.jpg">
+    <img src="../Images/shish.jpg">
+  </a>
+  <div class="desc">Shish tawook <br> $20 </div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="../Images/kushari.jpg">
+    <img src="../Images/kushari.jpg">
+  </a>
+  <div class="desc">Kushari <br> $12 </div>
+</div>
+</fieldset>
+<br><br>
+
+
+
+
+
+
+</body>
+</html>
